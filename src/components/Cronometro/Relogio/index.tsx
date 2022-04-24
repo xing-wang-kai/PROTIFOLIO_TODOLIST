@@ -9,7 +9,7 @@ const Relogio = ({ tempo = 0 }: props) => {
     const [segundoDezena, segundoUnidade] = String(segundos).padStart(2, "0");
 
     return(
-    <div>
+    <div className="itemCronometros">
         <span className="relogioNumero">{minutoDezena}</span>
         <span className="relogioNumero">{minutoUnidade}</span>
         <span className="relogioDivisao">:</span>

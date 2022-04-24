@@ -3,23 +3,27 @@
     flex-direction: column;
     align-items: center;
     grid-area: cronometro;
-    margin-top: 2rem;
+    margin: 2rem auto 2rem auto;
     width: 100%;
+}
+.itemCronometros{
+    width: 60%;
+    margin: 0 auto 0 6%;
 }
 
 .relogioWrapper{
     color: #ECB365;
-    display: flex;
-    align-items: center;
+    
+    
     justify-content: center;
     width: 100%;
-    height: 140px;
+    height: 100%;
     box-sizing: border-box;
     border-radius: 10px;
     padding: 16px 12px;
-    margin-bottom: 24px;
+    margin: 12px auto 24px auto;
     box-shadow: 2px 4px 4px #0000009f;
-    font-size: 5rem;
+    font-size: 2.5rem;
     background-color: #7687A1;
 }
 .titulo{
@@ -27,6 +31,15 @@
     font-size: 2rem;
 }
 
-@media screen and (min-width: 940px){
-
+@media screen and (max-width: 940px){
+    .cronometro{
+        width: 90%;
+    }
+    .relogioWrapper{
+        font-size: 2.5rem;
+    }
+    .itemCronometros{
+        width: 40%;
+        margin: 0 auto 0 6%;
+    }
 }
